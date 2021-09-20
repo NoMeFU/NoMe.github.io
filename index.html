@@ -2,6 +2,7 @@
     <head0>
         <meta charset="utf-8">
         <title>Сайт web-студії "Web-Deco"</title>
+        <script> src="js/clock1.js"></script>
         <script type="text/javascript">
         function send()
         {
@@ -27,6 +28,12 @@
 
         }
         </script>
+        <script>
+            window.onload = function()
+            {
+                setInterval(clockPainting, 1000);
+            }
+        </script>
         <head>
             <body background="images/bg.gif"></body>
             <table border="1" align="center" cellpadding="10">
@@ -49,6 +56,7 @@
 </tr>
 <tr>
     <td width="30%" valign="top">
+        <center><canvas id="canvas" height="120" width="120"></canvas> </center> <hr>
         <font size="5" colot="navy"><h2>Новини</h2></font>
         <font size="5">
             <ul>
